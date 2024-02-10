@@ -1,0 +1,4 @@
+*png_flags
+*__pycache__
+*.pytest_cache
+*project.xlsx
