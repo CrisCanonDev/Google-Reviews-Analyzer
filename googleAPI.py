@@ -13,7 +13,7 @@ def googleAPIConn(placeName):
     from vectorization import tfid
     
     print("check")
-    gmaps = googlemaps.Client(key="AIzaSyAwKrKDtMcI6Wp-rJxTVFQHDegbjOgrj9s")
+    gmaps = googlemaps.Client(key="")
     try:
         place_res = gmaps.places(placeName)
         place_id = place_res['results'][0]['place_id']

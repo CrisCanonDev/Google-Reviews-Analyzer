@@ -1,34 +1,10 @@
 import pandas as pd
 import seaborn as sns
-import numpy as np
 import matplotlib.pyplot as plt
-
-# def asign_colorPallete(val, colRange):
-#     for range in colRange:
-#         if val >= range[0] and val < range[1]:
-#             return range[2]
-#     return "gray"
-
-# def ratingVal(listOfRating):
-# colorRating=[]
-# for val in listOfRating:
-#     if val == 1:
-#         colorRating.append('red')
-#     elif val == 2:
-#         colorRating.append('orange')
-#     elif val == 3:
-#         colorRating.append('yellow')
-#     elif val == 4:
-#         colorRating.append('lime')
-#     elif val == 5:
-#         colorRating.append('green')
-# return colorRating
 
 
 def visua(listSent, listRating, title, placeID):
-    # rangeSentiment = [(-1, -0.6, "red"), (-0.6, -0.2, "orange"), (-0.2, 0.2, "yellow"), (0.2, 0.6, "lime"), (0.6, 1, "green")]
-    # colorSent= [asign_colorPallete(val, rangeSentiment) for val in rangeSentiment]
-    # colorRating = ratingVal(listRating)
+
     df = pd.DataFrame({
         "Sentiment Value": listSent,
         "Review Number": list('12345'),
